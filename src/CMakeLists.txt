@@ -1,0 +1,10 @@
+SET(MY_SRCS 
+    ${MY_SRCS}
+    "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+    PARENT_SCOPE
+)
+
+SET(MY_HEADERS
+    ${MY_HEADERS}
+    PARENT_SCOPE
+)
