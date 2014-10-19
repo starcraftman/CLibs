@@ -1,0 +1,4 @@
+SET(JSON1_SRCS
+    "${CMAKE_CURRENT_SOURCE_DIR}/github_json.c"
+    PARENT_SCOPE
+)
