@@ -1,0 +1,4 @@
+SET(XMLP1_SRCS
+    "${CMAKE_CURRENT_SOURCE_DIR}/xml_parse1.c"
+    PARENT_SCOPE
+)
