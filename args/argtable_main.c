@@ -78,7 +78,7 @@ int main(int argc, char **argv)
 
     /* arg_end used for error reporting and terminatint below void * ptr */
     struct arg_end *end = arg_end(20);
-    
+
     void *argtable[] = { help, list, recurse, verbose, version, repeat, defines, outfile, infiles, end };
     const char * const progname = "Argtable";
     int nerrors;
@@ -111,7 +111,7 @@ int main(int argc, char **argv)
         goto exit;
     }
 
-    if (version->count > 0) 
+    if (version->count > 0)
     {
         printf("%s example program for the argtable parse.\n", progname);
         printf("Done by starcraftman\n");
