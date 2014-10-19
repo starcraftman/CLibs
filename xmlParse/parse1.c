@@ -19,7 +19,7 @@
 #include "libxml/tree.h"
 
 /******************* Constants/Macros *********************/
-
+#define XML_FILE "res/libxml/test1.xml"
 
 /******************* Type Definitions *********************/
 /* For enums: Try to namesapce the common elements.
@@ -49,14 +49,11 @@ example1Func(const char *filename) {
 }
 
 /****************** Global Functions **********************/
-int main(int argc, char **argv)
+int main(void)
 {
-    if (argc != 2)
-        return 1;
-
     LIBXML_TEST_VERSION
 
-    example1Func(argv[1]);
+    example1Func(XML_FILE);
     xmlCleanupParser();
     xmlMemoryDump();
 
