@@ -44,7 +44,6 @@ for arg; do
       ;;
     main)
       build
-      $BDIR/ArgTable
       ;;
     *)
       echo "Invalid command, see the help."

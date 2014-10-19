@@ -1,10 +1,11 @@
-SET(MY_SRCS 
+SET(TAB_SRCS
     ${MY_SRCS}
-    "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/argtable_main.c"
     PARENT_SCOPE
 )
 
-SET(MY_HEADERS
-    ${MY_HEADERS}
+SET(ARGP_SRCS
+    ${GNU_SRCS}
+    "${CMAKE_CURRENT_SOURCE_DIR}/argp_main.c"
     PARENT_SCOPE
 )
