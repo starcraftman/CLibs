@@ -98,7 +98,7 @@ static char * request(const char *url) {
     }
 
     curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &code);
-    if (code != 2000) {
+    if (code != 200) {
         fprintf(stderr, "error: server responded with code %ld\n", code);
         goto error;
     }
