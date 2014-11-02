@@ -15,7 +15,7 @@ usage() {
 
 build() {
   if [ "$(uname -s)" == "Linux" -a ! -d ./libs ]; then
-    ./GetLibs.py argtable
+    ./GetLibs.py argtable libxml gtest jansson
   fi
 
   pushd "$BDIR"
